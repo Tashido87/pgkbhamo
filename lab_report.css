@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.report-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; /* Center the table horizontally */
+}
+
+.report-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px; /* Increase font size */
+    margin: 20px 0; /* Margin around the title */
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: 50px; /* Move the date inputs and buttons to the right */
+}
+
+.date-item {
+    margin-bottom: 10px;
+}
+
+.date-container label {
+    margin-bottom: 5px;
+}
+
+.date-container input {
+    width: 150px; /* Adjust the input width */
+    font-size: 16px; /* Increase font size for date inputs */
+    color: darkgreen; /* Change text color inside the date input */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px; /* Increase button size */
+    font-size: 16px; /* Increase font size */
+    background-color: lightblue; /* Light blue color */
+    border: none; /* Flat design */
+    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: transform 0.1s ease; /* Add transition for click animation */
+}
+
+.button-container button:active {
+    transform: scale(0.95); /* Scale button down slightly on click */
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    table-layout: auto;
+    margin: 0 auto; /* Center the table */
+    display: inline-block; /* Ensure the table's width is determined by its content */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.age-group-15-19 {
+    background-color: #d9eaf7;
+}
+
+.age-group-20-24 {
+    background-color: #ffe4c4;
+}
+
+.age-group-25-49 {
+    background-color: #9bcabe;
+}
+
+.age-group-50 {
+    background-color: #ffe4e1;
+}
+
+.totals {
+    background-color: #f2f2f2;
+}
+
+.highlight-row {
+    background-color: #d9eaf7;
+}
+
+.Recheck-row {
+    background-color: #d9eaf7; /* Adjust the color as needed */
+}
+
+.Recheck-row td {
+    text-align: center;
+    border: 1px solid black;
+}

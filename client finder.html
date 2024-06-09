@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhamo KPSC Client Finder</title>
+    <link rel="stylesheet" href="client finder.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="logout-container">
+        <button class="main-page-button" onclick="redirectToMainPage()">Main Page</button>
+        <button class="logout-button" onclick="confirmLogout()">Logout</button>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Bhamo KPSC Client Finder</h1>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Enter client name, reg code, or father's name" onkeydown="if(event.key === 'Enter') searchClient()">
+                <button id="search-button" onclick="searchClient()">Find it now</button>
+            </div>
+            <div id="results"></div>
+        </main>
+    </div>
+    <script src="client finder.js"></script>
+</body>
+</html>
