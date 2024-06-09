@@ -95,7 +95,7 @@ function searchClient() {
 
 function confirmLogout() {
     if (confirm("Do you really want to log out?")) {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
 }
 
