@@ -91,35 +91,23 @@
             background-color: #f0f2f5;
             width: 100%;
         }
-
-        #mainPage {
-            display: none;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
-    <div id="loginPage">
-        <div class="card">
-            <div class="sign-in-section">
-                <h2>Sign In</h2>
-                <form id="loginForm">
-                    <input type="text" id="username" placeholder="Username" required>
-                    <input type="password" id="password" placeholder="Password" required>
-                    <button type="submit">SIGN IN</button>
-                    <p id="errorMessage" class="error-message"></p>
-                </form>
-            </div>
-            <div class="welcome-section">
-                <h2>PGK Bhamo</h2>
-                <p>Please login to use all of site features</p>
-            </div>
+    <div class="card">
+        <div class="sign-in-section">
+            <h2>Sign In</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">SIGN IN</button>
+                <p id="errorMessage" class="error-message"></p>
+            </form>
         </div>
-    </div>
-
-    <div id="mainPage">
-        <h1>Welcome to the Main Page</h1>
-        <p>You have successfully logged in!</p>
+        <div class="welcome-section">
+            <h2>PGK BHAMO</h2>
+            <p>Please login to use all of site features</p>
+        </div>
     </div>
 
     <footer>
@@ -130,8 +118,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('loginForm');
             const errorMessage = document.getElementById('errorMessage');
-            const loginPage = document.getElementById('loginPage');
-            const mainPage = document.getElementById('mainPage');
 
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
@@ -141,8 +127,7 @@
 
                 if (username === 'pgkbhamo' && password === 'Pgk2019') {
                     // Successful login
-                    loginPage.style.display = 'none';
-                    mainPage.style.display = 'block';
+                    window.location.href = 'main_page.html';
                 } else {
                     // Failed login
                     errorMessage.textContent = 'Wrong credentials, try again!';
